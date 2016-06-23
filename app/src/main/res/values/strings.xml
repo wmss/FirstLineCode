@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">第一行代码</string>
+    <string name="directory_button_1">第1章 开始启程，你的第一行Android代码</string>
+    <string name="first_chapter_hello_world">我的第一个安卓程序：HelloWorld</string>
+    <string name="first_chapter_logcat">日志工具LogCat的使用</string>
+    <string name="logcat_text_view">
+        1.Log.v()\n
+        \t\t这个方法用于打印那些最为琐碎的，意义最小的日志信息，对应级别是verbose，是Android日志中级
+        别最低的一种\n\n
+        2.Log.d()\n
+        \t\t这个方法用于打印一些调试信息，这些信息对你调试程序和分析问题很有用。对应级别debug，比verbose
+        高一级\n\n
+        3.Log.i()\n
+        \t\t这个方法用于打印一些比较重要的数据，这些数据应该是你非常想看到的，可以帮你分析用户行为的那种。
+        对应级别info，比debug高一级。\n\n
+        4.Log.w()\n
+        \t\t这个方法用于打印一些警告信息，提示这个程序在这个地方可能会有潜在的风险，最好去修复一下这些出
+        现警告的地方。对应的级别warn,比info高一级。\n\n
+        5.Log.e()\n
+        \t\t这个方法用于打印程序中的错误信息，比如程序进入到catch语句中。当有错误的信息打印出来的时候，一般
+        都代表你的程序出现了严重的问题，必须尽快修复。对应的error，比warn高一级。
+    </string>
+    <string name="logcat_text_view_1">具体操作请看源码</string>
+</resources>
