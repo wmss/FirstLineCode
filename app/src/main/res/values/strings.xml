@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">第一行代码</string>
     <string name="directory_button_1">第1章 开始启程，你的第一行Android代码</string>
+    <string name="directory_button_2">第2章 先从看到的入手，探究活动</string>
     <string name="first_chapter_hello_world">我的第一个安卓程序：HelloWorld</string>
     <string name="first_chapter_logcat">日志工具LogCat的使用</string>
     <string name="logcat_text_view">

@@ -24,4 +24,11 @@ public class DirectoryActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToSecondChapter(View view) {
+
+    }
+
+    public void goTOThirdChapter(View view) {
+
+    }
 }
