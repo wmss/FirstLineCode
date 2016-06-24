@@ -22,4 +22,5 @@
         都代表你的程序出现了严重的问题，必须尽快修复。对应的error，比warn高一级。
     </string>
     <string name="logcat_text_view_1">具体操作请看源码</string>
+    <string name="second_chapter_button_1">隐藏标题栏</string>
 </resources>
