@@ -11,7 +11,8 @@ import tk.wmss.firstlinecode.R;
  */
 public class SecondChapterActivity extends AppCompatActivity {
 
-    private boolean B = false;
+    private boolean B = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,9 +21,10 @@ public class SecondChapterActivity extends AppCompatActivity {
 
     public void hideTitle(View view) {
         if (B) {
-            B = false;
             getSupportActionBar().hide();
+            B = false;
         } else {
+            getSupportActionBar().show();
             B = true;
         }
     }

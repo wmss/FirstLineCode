@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import tk.wmss.firstlinecode.firstchapter.FirstChapterActivity;
+import tk.wmss.firstlinecode.secondchapter.SecondChapterActivity;
 
 /**
  * Created by wmss on 2016/6/23.
@@ -25,7 +26,8 @@ public class DirectoryActivity extends AppCompatActivity {
     }
 
     public void goToSecondChapter(View view) {
-
+        Intent intent = new Intent(this, SecondChapterActivity.class);
+        startActivity(intent);
     }
 
     public void goTOThirdChapter(View view) {
