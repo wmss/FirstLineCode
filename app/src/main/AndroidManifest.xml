@@ -20,6 +20,7 @@
         <activity android:name=".firstchapter.HelloWorldActivity" />
         <activity android:name=".firstchapter.LogCatActivity" />
         <activity android:name=".secondchapter.SecondChapterActivity" />
+        <activity android:name=".secondchapter.IntentActivity" />
     </application>
 
 </manifest>

@@ -24,4 +24,6 @@
     <string name="logcat_text_view_1">具体操作请看源码</string>
     <string name="second_chapter_button_1">隐藏标题栏</string>
     <string name="second_chapter_button_2">显示一个Toast</string>
+    <string name="second_chapter_button_3">销毁当前活动</string>
+    <string name="second_chapter_button_4">使用Intent在活动间穿梭</string>
 </resources>

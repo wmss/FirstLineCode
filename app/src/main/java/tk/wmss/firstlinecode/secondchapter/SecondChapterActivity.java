@@ -1,5 +1,6 @@
 package tk.wmss.firstlinecode.secondchapter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -56,5 +57,14 @@ public class SecondChapterActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void finishActivity(View view) {
+        finish();
+    }
+
+    public void goToIntent(View view) {
+        Intent intent = new Intent();
+        startActivity(intent);
     }
 }
