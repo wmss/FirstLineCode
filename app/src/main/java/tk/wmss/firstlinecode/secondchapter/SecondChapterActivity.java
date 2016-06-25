@@ -64,7 +64,12 @@ public class SecondChapterActivity extends AppCompatActivity {
     }
 
     public void goToIntent(View view) {
-        Intent intent = new Intent();
+        /*
+        * Intent intent = new Intent(上下文【context】,要启动的活动);
+        * 然后使用startActivity();启动活动。
+        * startActivity(intent);
+        * */
+        Intent intent = new Intent(SecondChapterActivity.this, IntentActivity.class);
         startActivity(intent);
     }
 }

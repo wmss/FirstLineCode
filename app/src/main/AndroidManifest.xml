@@ -21,6 +21,7 @@
         <activity android:name=".firstchapter.LogCatActivity" />
         <activity android:name=".secondchapter.SecondChapterActivity" />
         <activity android:name=".secondchapter.IntentActivity" />
+        <activity android:name=".TestGoToActivity" />
     </application>
 
 </manifest>
