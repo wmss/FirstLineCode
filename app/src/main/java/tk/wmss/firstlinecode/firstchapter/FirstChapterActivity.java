@@ -15,7 +15,7 @@ public class FirstChapterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_chapter);
-        setTitle("第一章：开始启程你的第一行Android代码");
+        setTitle("第一章");
     }
 
     public void goToHelloWorld(View view) {
