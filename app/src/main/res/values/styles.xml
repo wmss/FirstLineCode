@@ -24,6 +24,7 @@
     </style>
 
     <style name="Theme.myCustom" parent="Theme.AppCompat.Light.Dialog">
+        <!--TODO:记得去写这个的实现方法的笔记，（该方法为了实现对话框式Activity去除标题栏）方法参考地址：http://stackoverflow.com/questions/30184031/appcompatactivity-as-a-dialog-without-title-->
         <item name="windowNoTitle">true</item>
     </style>
 
