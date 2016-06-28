@@ -23,6 +23,9 @@
         <item name="android:layout_width">match_parent</item>
     </style>
 
+    <style name="Theme.myCustom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
 
 
 </resources>

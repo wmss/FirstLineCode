@@ -32,4 +32,19 @@
         android:onClick="goToIntent"
         android:text="@string/second_chapter_button_4"
         android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToActivityLifecycle"
+        android:text="@string/second_chapter_button_5"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToActivityLifecycle"
+        android:text="@string/second_chapter_button_6"
+        android:textAllCaps="false" />
+
 </LinearLayout>

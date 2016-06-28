@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/activity_lifecycle_menu_item1"
+        android:title="@string/lifecycle_menu_text1" />
+    <item
+        android:id="@+id/activity_lifecycle_menu_item2"
+        android:title="@string/lifecycle_menu_text2" />
+</menu>

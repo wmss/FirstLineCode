@@ -73,4 +73,10 @@ public class SecondChapterActivity extends AppCompatActivity {
         Intent intent = new Intent(SecondChapterActivity.this, IntentActivity.class);
         startActivity(intent);
     }
+
+    public void goToActivityLifecycle(View view) {
+        Toast.makeText(SecondChapterActivity.this, "更多操作请呼出菜单", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(SecondChapterActivity.this, ActivityLifecycle.class);
+        startActivity(intent);
+    }
 }

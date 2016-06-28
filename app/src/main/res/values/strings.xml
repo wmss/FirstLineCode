@@ -35,4 +35,10 @@
     <string name="intend_edit_text_hint_1">请输入要向下传递的数据</string>
     <string name="intent_pass_data_edit_text_hint_1">请输入要向上传递的数据</string>
     <string name="intent_text_view_1">这里会显示传递来的数据</string>
+    <string name="second_chapter_button_5">Activity生命周期</string>
+    <string name="activity_lifecycle_text_view">具体运行效果查看LogCat</string>
+    <string name="test_activity_lifecycle_text_view_1">那个标题栏终于被我清掉了</string>
+    <string name="lifecycle_menu_text2">弹出一个对话框式</string>
+    <string name="lifecycle_menu_text1">显示一个消息</string>
+    <string name="second_chapter_button_6">Activity的启动模式</string>
 </resources>

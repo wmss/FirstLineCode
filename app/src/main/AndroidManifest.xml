@@ -34,6 +34,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".secondchapter.IntentPassData" />
+        <activity android:name=".secondchapter.ActivityLifecycle" />
+        <activity
+            android:name=".secondchapter.TestActivityLifecycle"
+            android:theme="@style/Theme.myCustom" />
     </application>
 
 </manifest>
