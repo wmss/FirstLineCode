@@ -42,4 +42,9 @@
     <string name="lifecycle_menu_text1">显示一个消息</string>
     <string name="second_chapter_button_6">Activity的启动模式</string>
     <string name="onclick_scanner_hint_text">点击输入</string>
+    <string name="startupMode_button_text_1">默认启动模式Standard</string>
+    <string name="startupMode_button_text_2">SingleTop启动模式</string>
+    <string name="startupMode_button_text_3">SingleTask启动模式</string>
+    <string name="startupMode_button_text_4">SingleTask启动模式</string>
+    <string name="startupMode_button_text_5">SingleInstance启动模式</string>
 </resources>

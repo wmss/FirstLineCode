@@ -79,4 +79,8 @@ public class SecondChapterActivity extends AppCompatActivity {
         Intent intent = new Intent(SecondChapterActivity.this, ActivityLifecycle.class);
         startActivity(intent);
     }
+
+    public void goToActivityStartupMode(View view) {
+
+    }
 }
