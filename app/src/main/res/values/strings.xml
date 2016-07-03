@@ -47,4 +47,5 @@
     <string name="startupMode_button_text_3">SingleTask启动模式</string>
     <string name="startupMode_button_text_4">SingleTask启动模式</string>
     <string name="startupMode_button_text_5">SingleInstance启动模式</string>
+    <string name="startup_mode_public_text">启动自己</string>
 </resources>

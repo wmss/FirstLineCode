@@ -81,6 +81,7 @@ public class SecondChapterActivity extends AppCompatActivity {
     }
 
     public void goToActivityStartupMode(View view) {
-
+        Intent intent = new Intent(this, StartupModeActivity.class);
+        startActivity(intent);
     }
 }
