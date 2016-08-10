@@ -10,7 +10,8 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
-	private Intent intent = new Intent(this, DirectoryActivity.class);//你要转向的Activity
+	//你要转向的Activity
+	int i = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,21 +19,22 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		getSupportActionBar().hide();
 
-		Timer timer = new Timer();
-		TimerTask task = new TimerTask() {
-			@Override
-			public void run() {
-				goToDirectory();
-			}
-		};
-		timer.schedule(task, 1000 * 3);
+			Timer timer = new Timer();
+			TimerTask task = new TimerTask() {
+				@Override
+				public void run() {
+					goToDirectory();
+				}
+			};
+			timer.schedule(task, 1000 * 3);
 	}
 
 	public void goToDirectory(View view) {
-		goToDirectory();
+//		goToDirectory();
 	}
 
 	private void goToDirectory() {
+		Intent intent = new Intent(this, DirectoryActivity.class);
 		startActivity(intent);
 		finish();
 	}

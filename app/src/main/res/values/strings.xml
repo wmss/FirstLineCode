@@ -39,7 +39,7 @@
     <string name="activity_lifecycle_text_view">具体运行效果查看LogCat</string>
     <string name="test_activity_lifecycle_text_view_1">我是一个对话框式的Activity</string>
     <string name="lifecycle_menu_text2">弹出一个对话框式</string>
-    <string name="lifecycle_menu_text1">显示一个消息</string>
+    <string name="lifecycle_menu_text1">弹出一个警告确认框</string>
     <string name="second_chapter_button_6">Activity的启动模式</string>
     <string name="onclick_scanner_hint_text">点击输入</string>
     <string name="startupMode_button_text_1">默认启动模式Standard</string>

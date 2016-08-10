@@ -1,8 +1,10 @@
 package tk.wmss.firstlinecode.secondchapter;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -105,7 +107,23 @@ public class ActivityLifecycle extends AppCompatActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.activity_lifecycle_menu_item1:
-				Toast.makeText(ActivityLifecycle.this, "我是一个消息", Toast.LENGTH_SHORT).show();
+				AlertDialog.Builder builder = new AlertDialog.Builder(ActivityLifecycle.this);
+				builder.setTitle("警告");
+				builder.setMessage("这是个警告确认框");
+				builder.setCancelable(false);
+				builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialogInterface, int i) {
+						Toast.makeText(ActivityLifecycle.this, "确认", Toast.LENGTH_SHORT).show();
+					}
+				});
+				builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialogInterface, int i) {
+
+					}
+				});
+				builder.show();
 				break;
 
 			case R.id.activity_lifecycle_menu_item2:
