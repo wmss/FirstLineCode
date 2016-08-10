@@ -27,7 +27,7 @@ public class ActivityLifecycle extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		Log.i(TAG, "onCreate");
 		setContentView(R.layout.activity_lifecycle);
-		getSupportActionBar().hide();
+//		getSupportActionBar().hide();
 	}
 
 	@Override

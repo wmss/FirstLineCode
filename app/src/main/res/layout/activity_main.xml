@@ -6,9 +6,21 @@
     tools:context="tk.wmss.firstlinecode.MainActivity">
 
     <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/the_cover"
-        android:onClick="goToDirectory" />
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/colorPrimary"
+	    android:onClick="goToDirectory"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/the_cover"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:padding="48dp"
+		android:text="EditCode in wmss"
+		android:textColor="@android:color/black"
+		android:textSize="12sp"/>
 
 </RelativeLayout>
