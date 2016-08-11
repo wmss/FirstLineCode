@@ -30,7 +30,7 @@ public class StandardModeActivity extends AppCompatActivity implements View.OnCl
 				Intent intent = new Intent(this, StandardModeActivity.class);
 				startActivity(intent);
 				break;
-			//TODO:记得使用一个布局完成以后的任务！
+
 			default:
 				break;
 		}

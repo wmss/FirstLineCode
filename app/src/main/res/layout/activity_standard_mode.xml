@@ -10,6 +10,5 @@
 		android:id="@+id/startup_mode_button"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/startup_mode_public_text"
-		android:textAllCaps="false"/>
+		android:text="@string/startup_mode_public_text"/>
 </LinearLayout>
