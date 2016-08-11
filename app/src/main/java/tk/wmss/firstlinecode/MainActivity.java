@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		getSupportActionBar().hide();
+
+		if (getSupportActionBar() != null)
+			getSupportActionBar().hide();
 
 		TimerTask task = new TimerTask() {
 			@Override
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 				goToDirectory();
 			}
 		};
-		timer.schedule(task, 1000 * 3);
+		timer.schedule(task, 1000 * 4);
 
 	}
 

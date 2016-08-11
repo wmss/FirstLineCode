@@ -18,8 +18,8 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true"
 		android:layout_centerHorizontal="true"
-		android:padding="48dp"
-		android:text="EditCode in wmss"
+		android:layout_margin="48dp"
+		android:text="@string/editcode_in_wmss"
 		android:textColor="@android:color/black"
 		android:textSize="12sp"/>
 
