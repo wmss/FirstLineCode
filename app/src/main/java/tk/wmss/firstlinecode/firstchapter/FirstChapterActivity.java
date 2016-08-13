@@ -2,15 +2,15 @@ package tk.wmss.firstlinecode.firstchapter;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import tk.wmss.firstlinecode.R;
+import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
 
 /**
  * Created by wmss on 2016/6/23.
  */
-public class FirstChapterActivity extends AppCompatActivity {
+public class FirstChapterActivity extends LogcatClassNameActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

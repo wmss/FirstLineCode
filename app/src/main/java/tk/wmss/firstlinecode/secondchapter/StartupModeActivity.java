@@ -2,16 +2,16 @@ package tk.wmss.firstlinecode.secondchapter;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import tk.wmss.firstlinecode.R;
 import tk.wmss.firstlinecode.secondchapter.StartupMode.StandardModeActivity;
+import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
 
 /**
  * Created by wmss on 2016/6/29.
  */
-public class StartupModeActivity extends AppCompatActivity {
+public class StartupModeActivity extends LogcatClassNameActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

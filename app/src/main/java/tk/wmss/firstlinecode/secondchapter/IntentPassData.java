@@ -3,17 +3,17 @@ package tk.wmss.firstlinecode.secondchapter;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import tk.wmss.firstlinecode.R;
+import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
 
 /**
  * Created by wmss on 2016/6/26.
  */
-public class IntentPassData extends AppCompatActivity {
+public class IntentPassData extends LogcatClassNameActivity {
 
     private EditText editText;
 

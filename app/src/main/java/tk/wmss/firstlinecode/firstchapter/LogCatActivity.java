@@ -1,15 +1,15 @@
 package tk.wmss.firstlinecode.firstchapter;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import tk.wmss.firstlinecode.R;
+import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
 
 /**
  * Created by wmss on 2016/6/23.
  */
-public class LogCatActivity extends AppCompatActivity {
+public class LogCatActivity extends LogcatClassNameActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

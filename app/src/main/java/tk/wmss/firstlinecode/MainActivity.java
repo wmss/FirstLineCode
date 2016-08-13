@@ -2,13 +2,14 @@ package tk.wmss.firstlinecode;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends AppCompatActivity {
+import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
+
+public class MainActivity extends LogcatClassNameActivity {
 
 	Timer timer = new Timer();
 

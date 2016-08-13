@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,18 +12,19 @@ import android.view.View;
 import android.widget.Toast;
 
 import tk.wmss.firstlinecode.R;
-import tk.wmss.firstlinecode.TestGoToActivity;
+import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
 
 /**
  * Created by wmss on 2016/6/28.
  */
-public class ActivityLifecycle extends AppCompatActivity {
+public class ActivityLifecycle extends LogcatClassNameActivity {
 	private static final String TAG = "在ActivityLifecycle下调用了";
 
 	@SuppressWarnings("ConstantConditions")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTitle("第二章→Activity的生命周期");
 		Log.i(TAG, "onCreate");
 		setContentView(R.layout.activity_lifecycle);
 //		getSupportActionBar().hide();

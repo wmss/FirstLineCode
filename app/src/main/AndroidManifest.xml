@@ -21,7 +21,7 @@
 		<activity android:name=".firstchapter.LogCatActivity"/>
 		<activity android:name=".secondchapter.SecondChapterActivity"/>
 		<activity android:name=".secondchapter.IntentActivity"/>
-		<activity android:name=".TestGoToActivity">
+		<activity android:name=".secondchapter.TestGoToActivity">
 			<intent-filter>
 				<action android:name="tk.wmss.firstlinecode.ACTION_START"/>
 				<!--替换上方的标签使得TestActivity可以响应打开网址-->
@@ -40,6 +40,9 @@
 			android:theme="@style/Theme.myCustom"/>
 		<activity android:name=".secondchapter.StartupModeActivity"/>
 		<activity android:name=".secondchapter.StartupMode.StandardModeActivity"/>
+		<activity
+			android:name=".secondchapter.StartupMode.SingleTopModeActivity"
+			android:launchMode="singleTop"/>
 	</application>
 
 </manifest>

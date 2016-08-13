@@ -3,7 +3,6 @@ package tk.wmss.firstlinecode.secondchapter;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -11,13 +10,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import tk.wmss.firstlinecode.R;
+import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
 
 /**
  * Created by wmss on 2016/6/25.
  * 严重声明自己！
  * 要长记性，代码要自己审核一遍，
  */
-public class IntentActivity extends AppCompatActivity {
+public class IntentActivity extends LogcatClassNameActivity {
     private EditText editText;
     private TextView textView;
 
@@ -73,7 +73,8 @@ public class IntentActivity extends AppCompatActivity {
             case 1:
                 if (resultCode == RESULT_OK) {
                     String s = data.getStringExtra("data_return");
-                    textView.setText(s);
+                    String s2 = textView.getText().toString();
+                    textView.setText(s2 + ":" + s);
                     Log.i("数据", s);
                 }
                 break;
