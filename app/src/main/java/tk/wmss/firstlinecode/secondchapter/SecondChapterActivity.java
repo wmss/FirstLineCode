@@ -70,7 +70,7 @@ public class SecondChapterActivity extends LogcatClassNameActivity {
 
 	public void goToIntent(View view) {
 	    /*
-        * Intent intent = new Intent(上下文【context】,要启动的活动);
+	    * Intent intent = new Intent(上下文【context】,要启动的活动);
         * 然后使用startActivity();启动活动。
         * startActivity(intent);
         * */
