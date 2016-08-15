@@ -15,6 +15,7 @@ public class SingleTopModeTestActivity extends LogcatClassNameActivity {
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTitle("SingleTop Test");
 		setContentView(R.layout.activity_single_top_test);
 	}
 

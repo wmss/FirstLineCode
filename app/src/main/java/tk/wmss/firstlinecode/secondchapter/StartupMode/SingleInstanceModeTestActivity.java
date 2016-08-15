@@ -14,6 +14,7 @@ public class SingleInstanceModeTestActivity extends LogcatClassNameActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTitle("SingleInstance Test");
 		setContentView(R.layout.activity_sing_instance_test);
 	}
 
