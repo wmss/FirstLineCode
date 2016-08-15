@@ -28,6 +28,7 @@ public class SingleInstanceModeActivity extends LogcatClassNameActivity {
 	}
 
 	public void goToSingInstance(View view) {
+		Toast.makeText(SingleInstanceModeActivity.this, "Test", Toast.LENGTH_SHORT).show();
 		Intent intent = new Intent(this, SingleInstanceModeActivity.class);
 		startActivity(intent);
 		Toast.makeText(SingleInstanceModeActivity.this, "点击了", Toast.LENGTH_SHORT).show();
