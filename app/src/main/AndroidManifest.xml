@@ -43,6 +43,20 @@
 		<activity
 			android:name=".secondchapter.StartupMode.SingleTopModeActivity"
 			android:launchMode="singleTop"/>
+		<activity
+			android:name=".secondchapter.StartupMode.SingleTopModeTestActivity"
+			android:launchMode="singleTop"/>
+		<activity
+			android:name=".secondchapter.StartupMode.SingleTaskModeActivity"
+			android:launchMode="singleTask"/>
+		<activity android:name=".secondchapter.StartupMode.SingleTaskModeTestActivity"/>
+
+		<activity
+			android:name=".secondchapter.StartupMode.SingleInstanceModeActivity"
+			android:launchMode="singleInstance"/>
+
+		<activity android:name=".secondchapter.StartupMode.SingleInstanceModeTestActivity"/>
+
 	</application>
 
 </manifest>
