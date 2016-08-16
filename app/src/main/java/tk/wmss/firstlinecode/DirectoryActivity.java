@@ -11,13 +11,14 @@ import android.widget.Toast;
 import tk.wmss.firstlinecode.firstchapter.FirstChapterActivity;
 import tk.wmss.firstlinecode.secondchapter.SecondChapterActivity;
 import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
+import tk.wmss.firstlinecode.thirdchapter.UIWidget;
 
 /**
  * Created by wmss on 2016/6/23.
  */
 public class DirectoryActivity extends LogcatClassNameActivity implements AdapterView.OnItemClickListener {
 
-	String[] data = {"第1章 开始启程，你的第一行Android代码", "第2章 先从看到的入手，探究活动"};
+	String[] data = {"第1章 开始启程，你的第一行Android代码", "第2章 先从看到的入手，探究活动", "第3章 软件也要拼脸蛋，UI开发的点点滴滴"};
 
 	@Override
 
@@ -63,6 +64,10 @@ public class DirectoryActivity extends LogcatClassNameActivity implements Adapte
 			case 1:
 				Intent intent1 = new Intent(this, SecondChapterActivity.class);
 				startActivity(intent1);
+				break;
+			case 2:
+				Intent intent2 = new Intent(this, UIWidget.class);
+				startActivity(intent2);
 				break;
 			default:
 				Toast.makeText(DirectoryActivity.this, "暂无操作", Toast.LENGTH_SHORT).show();

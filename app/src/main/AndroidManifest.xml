@@ -56,7 +56,7 @@
 			android:launchMode="singleInstance"/>
 
 		<activity android:name=".secondchapter.StartupMode.SingleInstanceModeTestActivity"/>
-
+		<activity android:name=".thirdchapter.UIWidget"/>
 	</application>
 
 </manifest>
