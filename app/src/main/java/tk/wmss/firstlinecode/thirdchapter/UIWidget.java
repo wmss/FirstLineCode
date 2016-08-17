@@ -2,6 +2,7 @@ package tk.wmss.firstlinecode.thirdchapter;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,11 +17,15 @@ import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
  * Created by wmss on 2016/8/16.
  */
 public class UIWidget extends LogcatClassNameActivity {
-	boolean textViewB = true;
+	private static final String TAG = "Run i ";
+	private boolean textViewB = true;
 	private TextView textView = null;
 	private Timer timer = new Timer();
+	private int i = 0;
+	private int[] colorArgs = {0xFFEBC13D, 0xFFF55324, 0xFFB400DE, 0xFF175FF5, 0xFF00CE6D};
 
 	@Override
+
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_ui);
@@ -32,15 +37,36 @@ public class UIWidget extends LogcatClassNameActivity {
 					Toast.makeText(UIWidget.this, "" + textView.getText().toString(), Toast.LENGTH_SHORT).show();
 					textViewB = false;
 				}
-				textView.setTextColor(0xff3eb55d);
-				TimerTask task = new TimerTask() {
+//				textView.setTextColor(0xFFEBC13D);
+
+				timer.schedule(new TimerTask() {
 					@Override
 					public void run() {
+						UIWidget.this.runOnUiThread(new Runnable() {
+							@Override
+							public void run() {
+								Log.i(TAG, "" + i);
+								if (i < colorArgs.length) {
+									textView.setTextColor(colorArgs[i]);
+									i++;
+									Log.i(TAG, "i++后 i=" + i);
+								} else {
+									i = 0;
+									Log.i(TAG, "查看i是否归零 i=" + i);
+//									timer.cancel();
+								}
 
+							}
+						});
 					}
-				};
-				timer.schedule(task, 1000 * 4);
+				}, 0, 500);
 			}
 		});
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		timer.cancel();
 	}
 }
