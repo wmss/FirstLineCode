@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,9 +17,10 @@ import tk.wmss.firstlinecode.successors.LogcatClassNameActivity;
 /**
  * Created by wmss on 2016/8/16.
  */
-public class UIWidget extends LogcatClassNameActivity {
+public class UIWidget extends LogcatClassNameActivity implements View.OnClickListener {
 	private static final String TAG = "Run i ";
 	private boolean textViewB = true;
+	private boolean buttonB = true;
 	private TextView textView = null;
 	private Timer timer = new Timer();
 	private int i = 0;
@@ -30,6 +32,9 @@ public class UIWidget extends LogcatClassNameActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_ui);
 		textView = (TextView) findViewById(R.id.ui_text_view_1);
+		Button button = (Button) findViewById(R.id.ui_button_1);
+
+		button.setOnClickListener(this);
 		textView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -68,5 +73,22 @@ public class UIWidget extends LogcatClassNameActivity {
 	protected void onDestroy() {
 		super.onDestroy();
 		timer.cancel();
+	}
+
+	@Override
+	public void onClick(View view) {
+		switch (view.getId()) {
+			case R.id.ui_button_1:
+
+				if (buttonB) {
+					textView.setText("UI");
+					buttonB = false;
+				} else {
+					textView.setText("UIWidget");
+					buttonB = true;
+				}
+				break;
+
+		}
 	}
 }

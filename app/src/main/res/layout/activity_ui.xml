@@ -19,6 +19,12 @@
 			android:text="UIWidget"
 			android:textSize="32sp"/>
 
+		<Button
+			android:id="@+id/ui_button_1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="我会改变上方的文字"/>
+
 
 	</LinearLayout>
 
